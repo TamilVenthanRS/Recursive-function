@@ -1,43 +1,52 @@
 # Recursive-function
 
-## Aim: 
+## Aim:
 To write a C# program to reverse a number using recursive function.
 
 ## Algorithm:
+## Step1:
+Create a function for reversing.
 
+## Step2:
+Get the number from the user.
+
+## Step3:
+In the function find reminder of the number and multiply it by 10 and add the reverse number.
+
+## Step4:
+Recusively call this function to get the reversed number.
+
+## Step5:
+print the reversed number.
 ## Program:
-```c#
+```python
 using System;
-
-namespace exp7
+class example
 {
-    class Program
+    public static void fun(int n)
     {
-        int rem = 0, rev = 0;
-        public int reverse(int n)
+        if(n < 1)
         {
-            rem = n % 10;
-            if (rem == 0) return rev;
-            else
-            {
-                rev = rev * 10 + rem;
-                return reverse(n / 10);
-            }
+            
+            return;
         }
-        static void Main(string[] args)
+        else
         {
-            int n;
-            Console.WriteLine("Enter a Number to reverse: ");
-            n = Convert.ToInt32(Console.ReadLine());
-
-            Program p1 = new Program();
-            Console.WriteLine("Reversed Number is "+ p1.reverse(n));
+            Console.Write(n % 10);
+            fun(n / 10);
         }
+    }
+    public static void Main()
+    {
+        int i;
+        i = Convert.ToInt32(Console.ReadLine());
+        fun(123);
+        
     }
 }
 ```
 ## Output:
-![image](https://user-images.githubusercontent.com/75235488/170664396-8221d957-d4d8-425b-b6df-dfc121360d52.png)
+![image](https://user-images.githubusercontent.com/75235090/170515577-ff0a8b88-0353-4c90-b783-1fbf5235d42a.png)
 
 ## Result:
-C# program to reverse a number using recursive function is executed successfully.
+Thus C# program to reverse a number using recursive function is written and executed sucessfully.
