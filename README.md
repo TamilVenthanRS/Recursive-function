@@ -1,4 +1,6 @@
-# Recursive-function
+### EX NO:07
+### DATE: 
+# <p align="center">Recursive-function</p> 
 
 ## Aim:
 To write a C# program to reverse a number using recursive function.
